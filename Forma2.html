@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        Отзыв о посещении Фитнес-зала
+    <form class="form2" action="https://jsonplaceholder.typicode.com/posts" method="post">
+        <div class=""
+        <input type="text" name="name" maxlength="30" required placeholder="Введите имя">
+        <label>
+            <input type="radio" name="gender" value="Мужской">Мужской
+            </label>
+            <label>
+            <input type="radio" name="gender" checked value="Женский">Женский
+            </label>
+            <select>
+                <option selected value="Район не выбран" disabled>Район</option>
+                <option value="Максимус на Баруди">Максимус на Баруди</option>
+                <option value="Максимус на Минской">Максимус на Минской</option>
+            </select>
+        <input type="date" name="visit-date" value="2023-02-16" min="2023-01-16" max="2023-02-16">
+        <input type="number" name="ocenka" min="1" max="10" placeholder="Ваша оценка">
+        <textarea name="otziv" placeholder="Ваш отзыв" name="otziv" maxlength="255">
+        </textarea>
+        <button  type="submit">Отправить</button>
+    </form>
+    </fieldset>
+</body>
+</html>
